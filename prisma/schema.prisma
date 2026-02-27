@@ -1,26 +1,25 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider      = "prisma-client-js"
   binaryTargets = ["native", "debian-openssl-3.0.x"]
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./lavamusic.db"
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
 }
 
 model Bot {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
   botId         String @unique
   totalPlaySong Int    @default(0)
 }
 
 model Guild {
-  guildId  String  @id
+  id       String  @id @default(auto()) @map("_id") @db.ObjectId
+  guildId  String  @unique
   prefix   String
   language String? @default("EnglishUS")
   stay     Stay?
@@ -30,19 +29,22 @@ model Guild {
 }
 
 model Stay {
-  guildId String @id
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  guildId String @unique
   textId  String
   voiceId String
   Guild   Guild  @relation(fields: [guildId], references: [guildId])
 }
 
 model Dj {
-  guildId String  @id
+  id      String  @id @default(auto()) @map("_id") @db.ObjectId
+  guildId String  @unique
   mode    Boolean
   Guild   Guild   @relation(fields: [guildId], references: [guildId])
 }
 
 model Role {
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
   guildId String
   roleId  String
   Guild   Guild  @relation(fields: [guildId], references: [guildId])
@@ -51,7 +53,7 @@ model Role {
 }
 
 model Playlist {
-  id     String  @id @default(uuid())
+  id     String  @id @default(uuid()) @map("_id")
   userId String
   name   String
   tracks String? // Store the array of encoded tracks as a JSON string
@@ -60,7 +62,8 @@ model Playlist {
 }
 
 model Setup {
-  guildId   String @id
+  id        String @id @default(auto()) @map("_id") @db.ObjectId
+  guildId   String @unique
   textId    String
   messageId String
   Guild     Guild  @relation(fields: [guildId], references: [guildId])
