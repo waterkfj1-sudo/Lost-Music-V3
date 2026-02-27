@@ -1,662 +1,662 @@
 {
 	"cmd": {
 		"247": {
-			"description": "ضبط البوت للبقاء في القناة الصوتية بشكل دائم",
+			"description": "Set the bot to stay in the voice channel",
 			"errors": {
-				"not_in_voice": "يجب أن تكون في قناة صوتية لاستخدام هذا الأمر.",
-				"generic": "حدث خطأ أثناء محاولة تنفيذ هذا الأمر."
+				"not_in_voice": "You need to be in a voice channel to use this command.",
+				"generic": "An error occurred while trying to execute this command."
 			},
 			"messages": {
-				"disabled": "`✅` | تم `تعطيل` وضع 24/7.",
-				"enabled": "`✅` | تم `تفعيل` وضع 24/7."
+				"disabled": "`✅` | 24/7 mode has been `DISABLED`.",
+				"enabled": "`✅` | 24/7 mode has been `ENABLED`."
 			}
 		},
 		"ping": {
-			"description": "عرض سرعة اتصال البوت (Ping).",
-			"content": "جاري الفحص...",
-			"bot_latency": "تأخير البوت",
-			"api_latency": "تأخير الواجهة (API)",
-			"requested_by": "بواسطة {author}"
+			"description": "Shows the bot's ping.",
+			"content": "Pinging...",
+			"bot_latency": "Bot Latency",
+			"api_latency": "API Latency",
+			"requested_by": "Requested by {author}"
 		},
 		"lavalink": {
-			"description": "عرض إحصائيات Lavalink الحالية.",
-			"title": "إحصائيات Lavalink",
-			"content": "اللاعبين: {players}\nالمستمعين حالياً: {playingPlayers}\nوقت التشغيل: {uptime}\nالمعالجات: {cores} نواة\nاستهلاك الذاكرة: {used} / {reservable}\nضغط النظام: {systemLoad}%\nضغط Lavalink: {lavalinkLoad}%",
-			"page_info": "صفحة {index} من {total}"
+			"description": "Shows the current Lavalink stats.",
+			"title": "Lavalink Stats",
+			"content": "Player: {players}\nPlaying Players: {playingPlayers}\nUptime: {uptime}\nCores: {cores} Core(s)\nMemory Usage: {used} / {reservable}\nSystem Load: {systemLoad}%\nLavalink Load: {lavalinkLoad}%",
+			"page_info": "Page {index} of {total}"
 		},
 		"invite": {
-			"description": "الحصول على رابط دعوة البوت.",
-			"content": "يمكنك دعوتي من خلال الضغط على الزر أدناه. هل واجهت أي مشاكل؟ انضم لسيرفر الدعم الفني!"
+			"description": "Get the bot invite link.",
+			"content": "You can invite me by clicking the button below. Any bugs or outages? Join the support server!"
 		},
 		"help": {
-			"description": "عرض قائمة المساعدة.",
+			"description": "Shows the help menu.",
 			"options": {
-				"command": "الأمر الذي تريد معرفة معلومات عنه"
+				"command": "The command you want to get info on"
 			},
-			"content": "أهلاً بك! أنا {bot}، البوت الرسمي لموسيقى Lost Island. يمكنك استخدام `${prefix}help <command>` للحصول على معلومات أكثر عن أمر معين.",
-			"title": "قائمة المساعدة",
-			"not_found": "الأمر `{cmdName}` غير موجود.",
-			"help_cmd": "**الوصف:** {description}\n**الاستخدام:** {usage}\n**أمثلة:** {examples}\n**الاختصارات:** {aliases}\n**الفئة:** {category}\n**وقت الانتظار:** {cooldown} ثواني\n**صلاحيات المستخدم:** {premUser}\n**صلاحيات البوت:** {premBot}\n**للمطورين فقط:** {dev}\n**أمر سلاش:** {slash}\n**المعطيات:** {args}\n**المشغل:** {player}\n**الدي جي:** {dj}\n**صلاحيات الدي جي:** {djPerm}\n**الصوت:** {voice}",
-			"footer": "استخدم {prefix}help <command> للمزيد من المعلومات"
+			"content": "Hey there! I'm {bot}, The official music bot of Lost Island. You can use `${prefix}help <command>` to get more info on a command.",
+			"title": "Help Menu",
+			"not_found": "This `{cmdName}` command does not exist.",
+			"help_cmd": "**Description:** {description}\n**Usage:** {usage}\n**Examples:** {examples}\n**Aliases:** {aliases}\n**Category:** {category}\n**Cooldown:** {cooldown} seconds\n**Permissions:** {premUser}\n**Bot Permissions:** {premBot}\n**Developer Only:** {dev}\n**Slash Command:** {slash}\n**Args:** {args}\n**Player:** {player}\n**DJ:** {dj}\n**DJ Permissions:** {djPerm}\n**Voice:** {voice}",
+			"footer": "Use {prefix}help <command> for more info on a command"
 		},
 		"botinfo": {
-			"description": "معلومات عن البوت",
-			"content": "معلومات البوت:\n- **نظام التشغيل**: {osInfo}\n- **وقت التشغيل**: {osUptime}\n- **اسم المضيف**: {osHostname}\n- **معمارية المعالج**: {cpuInfo}\n- **استهلاك المعالج**: {cpuUsed}%\n- **استهلاك الذاكرة**: {memUsed}MB / {memTotal}GB\n- **إصدار Node**: {nodeVersion}\n- **إصدار Discord.js**: {discordJsVersion}\n- **متصل بـ**: {guilds} سيرفر، {channels} قناة، و {users} مستخدم\n- **إجمالي الأوامر**: {commands}"
+			"description": "Information about the bot",
+			"content": "Bot Information:\n- **Operating System**: {osInfo}\n- **Uptime**: {osUptime}\n- **Hostname**: {osHostname}\n- **CPU Architecture**: {cpuInfo}\n- **CPU Usage**: {cpuUsed}%\n- **Memory Usage**: {memUsed}MB / {memTotal}GB\n- **Node Version**: {nodeVersion}\n- **Discord.js Version**: {discordJsVersion}\n- **Connected to** {guilds} guilds, {channels} channels, and {users} users\n- **Total Commands**: {commands}"
 		},
 		"about": {
-			"description": "عرض معلومات حول البوت",
+			"description": "Shows information about the bot",
 			"fields": {
-				"creator": "المبرمج",
-				"repository": "المستودع",
-				"support": "الدعم",
-				"description": "هذا البوت مخصص لشبكة Lost Island!"
+				"creator": "Creator",
+				"repository": "Repository",
+				"support": "Support",
+				"description": "This bot is dedicated to Lost Island Network!"
 			}
 		},
 		"dj": {
-			"description": "إدارة وضع الدي جي (DJ) والرتب المرتبطة به",
+			"description": "Manage the DJ mode and associated roles",
 			"errors": {
-				"provide_role": "يرجى تحديد رتبة.",
-				"no_roles": "رتبة الدي جي فارغة.",
-				"invalid_subcommand": "يرجى تقديم أمر فرعي صحيح."
+				"provide_role": "Please provide a role.",
+				"no_roles": "The DJ role is empty.",
+				"invalid_subcommand": "Please provide a valid subcommand."
 			},
 			"messages": {
-				"role_exists": "رتبة الدي جي <@&{roleId}> مضافة بالفعل.",
-				"role_added": "تم إضافة رتبة الدي جي <@&{roleId}>.",
-				"role_not_found": "رتبة الدي جي <@&{roleId}> غير مضافة.",
-				"role_removed": "تم إزالة رتبة الدي جي <@&{roleId}>.",
-				"all_roles_cleared": "تم مسح جميع رتب الدي جي.",
-				"toggle": "تم تحويل وضع الدي جي إلى {status}."
+				"role_exists": "The DJ role <@&{roleId}> is already added.",
+				"role_added": "The DJ role <@&{roleId}> has been added.",
+				"role_not_found": "The DJ role <@&{roleId}> is not added.",
+				"role_removed": "The DJ role <@&{roleId}> has been removed.",
+				"all_roles_cleared": "All DJ roles have been removed.",
+				"toggle": "The DJ mode has been toggled to {status}."
 			},
 			"options": {
-				"add": "رتبة الدي جي التي تريد إضافتها",
-				"remove": "رتبة الدي جي التي تريد إزالتها",
-				"clear": "يمسح جميع رتب الدي جي",
-				"toggle": "تبديل وضع الدي جي",
-				"role": "رتبة الدي جي"
+				"add": "The DJ role you want to add",
+				"remove": "The DJ role you want to remove",
+				"clear": "Clears all DJ roles",
+				"toggle": "Toggles the DJ role",
+				"role": "The DJ role"
 			},
-			"subcommands": "الأوامر الفرعية"
+			"subcommands": "Subcommands"
 		},
 		"language": {
-			"description": "ضبط لغة البوت",
-			"invalid_language": "يرجى تحديد لغة صحيحة. مثال: `Arabic` للغة العربية.\n\n**اللغات المتاحة:**\n{languages}",
-			"already_set": "اللغة مضبوطة بالفعل على `{language}`",
-			"not_set": "لم يتم ضبط اللغة.",
-			"set": "`✅` | تم ضبط اللغة على `{language}`",
-			"reset": "`✅` | تم إعادة تعيين اللغة إلى اللغة الافتراضية.",
+			"description": "Set the language for the bot",
+			"invalid_language": "Please provide a valid language. Example: `EnglishUS` for English (United States)\n\nYou can find the list of supported languages [here](https://discord.com/developers/docs/reference#locales)\n\n**Available Languages:**\n{languages}",
+			"already_set": "The language is already set to `{language}`",
+			"not_set": "The language is not set.",
+			"set": "`✅` | The language has been set to `{language}`",
+			"reset": "`✅` | The language has been reset to the default language.",
 			"options": {
-				"set": "ضبط لغة البوت",
-				"language": "اللغة التي تريد ضبطها",
-				"reset": "إعادة اللغة إلى الافتراضية"
+				"set": "Set the language for the bot",
+				"language": "The language you want to set",
+				"reset": "Change the language back to the default language"
 			}
 		},
 		"prefix": {
-			"description": "عرض أو تغيير بادئة (Prefix) البوت",
+			"description": "Shows or sets the bot's prefix",
 			"errors": {
-				"prefix_too_long": "لا يمكن أن تكون البادئة أطول من 3 أحرف."
+				"prefix_too_long": "The prefix cannot be longer than 3 characters."
 			},
 			"messages": {
-				"current_prefix": "البادئة الحالية لهذا السيرفر هي `{prefix}`",
-				"prefix_set": "تم تغيير البادئة لهذا السيرفر إلى `{prefix}`",
-				"prefix_reset": "تم إعادة تعيين البادئة لهذا السيرفر إلى `{prefix}`"
+				"current_prefix": "The prefix for this server is `{prefix}`",
+				"prefix_set": "The prefix for this server is now `{prefix}`",
+				"prefix_reset": "The prefix for this server is now `{prefix}`"
 			},
 			"options": {
-				"set": "ضبط البادئة",
-				"prefix": "البادئة التي تريد تعيينها",
-				"reset": "إعادة تعيين البادئة للافتراضية"
+				"set": "Sets the prefix",
+				"prefix": "The prefix you want to set",
+				"reset": "Resets the prefix to the default one"
 			}
 		},
 		"setup": {
-			"description": "إعداد البوت وتجهيز قناة الطلبات",
+			"description": "Sets up the bot",
 			"errors": {
-				"channel_exists": "قناة طلبات الأغاني موجودة بالفعل.",
-				"channel_not_exists": "قناة طلبات الأغاني غير موجودة.",
-				"channel_delete_fail": "تم حذف قناة الإعداد من قاعدة البيانات، يرجى حذف القناة يدوياً من السيرفر."
+				"channel_exists": "The song request channel already exists.",
+				"channel_not_exists": "The song request channel doesn't exist.",
+				"channel_delete_fail": "The setup channel has been deleted from the database. Please delete the channel yourself."
 			},
 			"messages": {
-				"channel_created": "تم إنشاء قناة طلبات الأغاني في <#{channelId}>.",
-				"channel_deleted": "تم حذف قناة طلبات الأغاني.",
-				"channel_info": "قناة طلبات الأغاني هي <#{channelId}>."
+				"channel_created": "The song request channel has been created in <#{channelId}>.",
+				"channel_deleted": "The song request channel has been deleted.",
+				"channel_info": "The song request channel is <#{channelId}>."
 			},
 			"options": {
-				"create": "إنشاء قناة طلبات الأغاني",
-				"delete": "حذف قناة طلبات الأغاني",
-				"info": "عرض قناة طلبات الأغاني"
+				"create": "Creates the song request channel",
+				"delete": "Deletes the song request channel",
+				"info": "Shows the song request channel"
 			}
 		},
 		"8d": {
-			"description": "تفعيل/تعطيل فلتر 8D (ثلاثي الأبعاد)",
+			"description": "on/off 8d filter",
 			"messages": {
-				"filter_enabled": "`✅` | تم `تفعيل` فلتر 8D.",
-				"filter_disabled": "`✅` | تم `تعطيل` فلتر 8D."
+				"filter_enabled": "`✅` | 8D filter has been `ENABLED`.",
+				"filter_disabled": "`✅` | 8D filter has been `DISABLED`."
 			}
 		},
 		"bassboost": {
-			"description": "تفعيل/تعطيل فلتر تضخيم البيس",
+			"description": "on/off bassboost filter",
 			"options": {
-				"level": "مستوى تضخيم البيس الذي تريد ضبطه"
+				"level": "The bassboost level you want to set"
 			},
 			"messages": {
-				"high": "`✅` | تم `تفعيل` فلتر البيس (عالي).",
-				"low": "`✅` | تم `تفعيل` فلتر البيس (منخفض).",
-				"medium": "`✅` | تم `تفعيل` فلتر البيس (متوسط).",
-				"off": "`✅` | تم `تعطيل` فلتر تضخيم البيس."
+				"high": "`✅` | High bassboost filter has been `ENABLED`.",
+				"low": "`✅` | Low bassboost filter has been `ENABLED`.",
+				"medium": "`✅` | Medium bassboost filter has been `ENABLED`.",
+				"off": "`✅` | Bassboost filter has been `DISABLED`."
 			}
 		},
 		"distortion": {
-			"description": "تبديل فلتر التشويه (Distortion)",
+			"description": "Toggle the distortion filter on/off",
 			"messages": {
-				"filter_enabled": "`✅` | تم `تفعيل` فلتر التشويه.",
-				"filter_disabled": "`✅` | تم `تعطيل` فلتر التشويه."
+				"filter_enabled": "`✅` | Distortion filter has been `ENABLED`.",
+				"filter_disabled": "`✅` | Distortion filter has been `DISABLED`."
 			}
 		},
 		"karaoke": {
-			"description": "تبديل فلتر الكاريوكي",
+			"description": "Toggle the karaoke filter on/off",
 			"messages": {
-				"filter_enabled": "`✅` | تم `تفعيل` فلتر الكاريوكي.",
-				"filter_disabled": "`✅` | تم `تعطيل` فلتر الكاريوكي."
+				"filter_enabled": "`✅` | Karaoke filter has been `ENABLED`.",
+				"filter_disabled": "`✅` | Karaoke filter has been `DISABLED`."
 			}
 		},
 		"lowpass": {
-			"description": "تبديل فلتر التمرير المنخفض (Lowpass)",
+			"description": "Toggle the lowpass filter on/off",
 			"messages": {
-				"filter_enabled": "`✅` | تم `تفعيل` فلتر Lowpass.",
-				"filter_disabled": "`✅` | تم `تعطيل` فلتر Lowpass."
+				"filter_enabled": "`✅` | Lowpass filter has been `ENABLED`.",
+				"filter_disabled": "`✅` | Lowpass filter has been `DISABLED`."
 			}
 		},
 		"nightcore": {
-			"description": "تبديل فلتر النايت كور (Nightcore)",
+			"description": "Toggle the nightcore filter on/off",
 			"messages": {
-				"filter_enabled": "`✅` | تم `تفعيل` فلتر نايت كور.",
-				"filter_disabled": "`✅` | تم `تعطيل` فلتر نايت كور."
+				"filter_enabled": "`✅` | Nightcore filter has been `ENABLED`.",
+				"filter_disabled": "`✅` | Nightcore filter has been `DISABLED`."
 			}
 		},
 		"pitch": {
-			"description": "تبديل فلتر حدة الصوت (Pitch)",
+			"description": "Toggle the pitch filter on/off",
 			"options": {
-				"pitch": "الرقم الذي تريد ضبط حدة الصوت عليه (بين 0.5 و 5)"
+				"pitch": "The number you want to set the pitch to (between 0.5 and 5)"
 			},
 			"errors": {
-				"invalid_number": "يرجى تقديم رقم صحيح بين 0.5 و 5."
+				"invalid_number": "Please provide a valid number between 0.5 and 5."
 			},
 			"messages": {
-				"pitch_set": "`✅` | تم ضبط حدة الصوت على **{pitch}**."
+				"pitch_set": "`✅` | Pitch has been set to **{pitch}**."
 			}
 		},
 		"rate": {
-			"description": "تغيير معدل (Rate) الأغنية",
+			"description": "Change the rate of the song",
 			"options": {
-				"rate": "الرقم الذي تريد ضبط المعدل عليه (بين 0.5 و 5)"
+				"rate": "The number you want to set the rate to (between 0.5 and 5)"
 			},
 			"errors": {
-				"invalid_number": "يرجى تقديم رقم صحيح بين 0.5 و 5."
+				"invalid_number": "Please provide a valid number between 0.5 and 5."
 			},
 			"messages": {
-				"rate_set": "`✅` | تم ضبط المعدل على **{rate}**."
+				"rate_set": "`✅` | Rate has been set to **{rate}**."
 			}
 		},
 		"reset": {
-			"description": "إعادة تعيين الفلاتر النشطة",
+			"description": "Resets the active filters",
 			"messages": {
-				"filters_reset": "`✅` | تم إعادة تعيين جميع الفلاتر."
+				"filters_reset": "`✅` | Filters have been reset."
 			}
 		},
 		"rotation": {
-			"description": "تبديل فلتر الدوران (Rotation)",
+			"description": "Toggle the rotation filter on/off",
 			"messages": {
-				"enabled": "`✅` | تم `تفعيل` فلتر الدوران.",
-				"disabled": "`✅` | تم `تعطيل` فلتر الدوران."
+				"enabled": "`✅` | Rotation filter has been `ENABLED`.",
+				"disabled": "`✅` | Rotation filter has been `DISABLED`."
 			}
 		},
 		"speed": {
-			"description": "تغيير سرعة الأغنية",
+			"description": "Change the speed of the song",
 			"options": {
-				"speed": "السرعة التي تريد ضبطها"
+				"speed": "The speed you want to set"
 			},
 			"messages": {
-				"invalid_number": "يرجى تقديم رقم صحيح بين 0.5 و 5.",
-				"set_speed": "`✅` | تم ضبط السرعة على **{speed}**."
+				"invalid_number": "Please provide a valid number between 0.5 and 5.",
+				"set_speed": "`✅` | Speed has been set to **{speed}**."
 			}
 		},
 		"tremolo": {
-			"description": "تبديل فلتر الارتعاش (Tremolo)",
+			"description": "Toggle the tremolo filter on/off",
 			"messages": {
-				"enabled": "`✅` | تم `تفعيل` فلتر الارتعاش.",
-				"disabled": "`✅` | تم `تعطيل` فلتر الارتعاش."
+				"enabled": "`✅` | Tremolo filter has been `ENABLED`.",
+				"disabled": "`✅` | Tremolo filter has been `DISABLED`."
 			}
 		},
 		"vibrato": {
-			"description": "تبديل فلتر الاهتزاز (Vibrato)",
+			"description": "Toggle the vibrato filter on/off",
 			"messages": {
-				"enabled": "`✅` | تم `تفعيل` فلتر الاهتزاز.",
-				"disabled": "`✅` | تم `تعطيل` فلتر الاهتزاز."
+				"enabled": "`✅` | Vibrato filter has been `ENABLED`.",
+				"disabled": "`✅` | Vibrato filter has been `DISABLED`."
 			}
 		},
 		"autoplay": {
-			"description": "تبديل وضع التشغيل التلقائي",
+			"description": "Toggles autoplay",
 			"messages": {
-				"enabled": "`✅` | تم `تفعيل` التشغيل التلقائي.",
-				"disabled": "`✅` | تم `تعطيل` التشغيل التلقائي."
+				"enabled": "`✅` | Autoplay has been `ENABLED`.",
+				"disabled": "`✅` | Autoplay has been `DISABLED`."
 			}
 		},
 		"clearqueue": {
-			"description": "مسح قائمة الانتظار",
+			"description": "Clears the queue",
 			"messages": {
-				"cleared": "تم مسح قائمة الانتظار بالكامل."
+				"cleared": "The queue has been cleared."
 			}
 		},
 		"grab": {
-			"description": "إرسال تفاصيل الأغنية الحالية لخاصك",
-			"loading": "جاري التحميل...",
-			"content": "**المدة:** {length}\n**طلب بواسطة:** <@{requester}>\n**الرابط:** [اضغط هنا]({uri})",
-			"check_dm": "يرجى التحقق من الرسائل الخاصة بك.",
-			"dm_failed": "لم أتمكن من إرسال رسالة لك. تأكد من تفعيل استقبال الرسائل الخاصة."
+			"description": "Grabs the current playing song on your DM",
+			"loading": "Loading...",
+			"content": "**Duration:** {length}\n**Requested by:** <@{requester}>\n**Link:** [Click here]({uri})",
+			"check_dm": "Please check your DM.",
+			"dm_failed": "I couldn't send you a DM. Please make sure allow direct messages is turned on."
 		},
 		"join": {
-			"description": "دخول القناة الصوتية",
-			"already_connected": "أنا متصل بالفعل بـ <#{channelId}>.",
-			"no_voice_channel": "يجب أن تكون في قناة صوتية لاستخدام هذا الأمر.",
-			"joined": "دخلت بنجاح إلى <#{channelId}>."
+			"description": "Joins the voice channel",
+			"already_connected": "I'm already connected to <#{channelId}>.",
+			"no_voice_channel": "You need to be in a voice channel to use this command.",
+			"joined": "Successfully joined <#{channelId}>."
 		},
 		"leave": {
-			"description": "الخروج من القناة الصوتية",
-			"left": "خرجت بنجاح من <#{channelId}>.",
-			"not_in_channel": "أنا لست في قناة صوتية حالياً."
+			"description": "Leaves the voice channel",
+			"left": "Successfully left <#{channelId}>.",
+			"not_in_channel": "I'm not in a voice channel."
 		},
 		"loop": {
-			"description": "تكرار الأغنية الحالية أو قائمة الانتظار",
-			"looping_song": "**تم تفعيل تكرار الأغنية.**",
-			"looping_queue": "**تم تفعيل تكرار قائمة الانتظار.**",
-			"looping_off": "**تم إيقاف وضع التكرار.**"
+			"description": "Loop the current song or the queue",
+			"looping_song": "**Looping the song.**",
+			"looping_queue": "**Looping the queue.**",
+			"looping_off": "**Looping is now off.**"
 		},
 		"lyrics": {
-			"description": "الحصول على كلمات الأغنية التي تعمل حالياً",
-			"lyrics_track": "### كلمات: [{trackTitle}]({trackUrl})\n**`{lyrics}`**",
-			"searching": "`🔍` جاري البحث عن كلمات **{trackTitle}**...",
+			"description": "Get's the lyrics of the currently playing track",
+			"lyrics_track": "### Lyrics for: [{trackTitle}]({trackUrl})\n**`{lyrics}`**",
+			"searching": "`🔍` Searching for **{trackTitle}** lyrics...",
 			"errors": {
-				"no_results": "لم يتم العثور على كلمات للأغنية الحالية.",
-				"lyrics_error": "حدث خطأ أثناء محاولة جلب كلمات الأغنية."
+				"no_results": "No lyrics found for the current track.",
+				"lyrics_error": "An error occurred while getting the lyrics."
 			}
 		},
 		"nowplaying": {
-			"description": "عرض الأغنية التي تعمل حالياً",
-			"now_playing": "يعمل حالياً",
-			"track_info": "[{title}]({uri}) - طلب بواسطة: <@{requester}>\n\n`{bar}`"
+			"description": "Shows the currently playing song",
+			"now_playing": "Now Playing",
+			"track_info": "[{title}]({uri}) - Requested By: <@{requester}>\n\n`{bar}`"
 		},
 		"pause": {
-			"description": "إيقاف الأغنية مؤقتاً",
-			"successfully_paused": "تم إيقاف الأغنية مؤقتاً بنجاح."
+			"description": "Pauses the current song",
+			"successfully_paused": "Successfully paused the song."
 		},
 		"play": {
-			"description": "تشغيل أغنية من YouTube أو Spotify أو رابط مباشر",
+			"description": "Plays a song from YouTube, Spotify or http",
 			"options": {
-				"song": "اسم الأغنية أو الرابط الذي تريد تشغيله"
+				"song": "The song you want to play"
 			},
-			"loading": "جاري التحميل...",
+			"loading": "Loading...",
 			"errors": {
-				"search_error": "حدث خطأ أثناء البحث.",
-				"no_results": "لم يتم العثور على نتائج.",
-				"queue_too_long": "قائمة الانتظار طويلة جداً. الحد الأقصى هو {maxQueueSize} أغنية.",
-				"playlist_too_long": "قائمة التشغيل طويلة جداً. الحد الأقصى هو {maxPlaylistSize} أغنية."
+				"search_error": "There was an error while searching.",
+				"no_results": "There were no results found.",
+				"queue_too_long": "The queue is too long. The maximum length is {maxQueueSize} songs.",
+				"playlist_too_long": "The playlist is too long. The maximum length is {maxPlaylistSize} songs."
 			},
-			"added_to_queue": "تم إضافة [{title}]({uri}) إلى قائمة الانتظار.",
-			"added_playlist_to_queue": "تم إضافة {length} أغنية إلى قائمة الانتظار."
+			"added_to_queue": "Added [{title}]({uri}) to the queue.",
+			"added_playlist_to_queue": "Added {length} songs to the queue."
 		},
 		"playlocal": {
-			"description": "تشغيل ملفات صوتية محلية",
+			"description": "Plays an your local audio files",
 			"options": {
-				"file": "الملف الصوتي الذي تريد تشغيله"
+				"file": "The audio file you want to play"
 			},
-			"loading": "جاري التحميل...",
+			"loading": "Loading...",
 			"errors": {
-				"empty_query": "يرجى إرفاق ملف صوتي للتشغيل.",
-				"invalid_format": "يمكنك فقط تشغيل ملفات MP3, WAV, OGG, FLAC, AAC أو M4A.",
-				"no_results": "فشل تشغيل الملف. قد يكون تالفاً."
+				"empty_query": "Please attach an audio file to play.",
+				"invalid_format": "You can only play MP3, WAV, OGG, FLAC, AAC or M4A files.",
+				"no_results": "Failed to play the audio file. It may be corrupted."
 			},
-			"added_to_queue": "تم إضافة [{title}]({url}) إلى قائمة الانتظار"
+			"added_to_queue": "Added [{title}]({url}) to the queue"
 		},
 		"playnext": {
-			"description": "إضافة أغنية لتكون التالية في قائمة الانتظار",
+			"description": "Add the song to play next in queue",
 			"options": {
-				"song": "الأغنية التي تريد إضافتها"
+				"song": "The song you want to play"
 			},
-			"loading": "جاري التحميل...",
+			"loading": "Loading...",
 			"errors": {
-				"search_error": "حدث خطأ أثناء البحث.",
-				"no_results": "لم يتم العثور على نتائج.",
-				"queue_too_long": "قائمة الانتظار طويلة جداً.",
-				"playlist_too_long": "قائمة التشغيل طويلة جداً."
+				"search_error": "There was an error while searching.",
+				"no_results": "There were no results found.",
+				"queue_too_long": "The queue is too long. The maximum length is {maxQueueSize} songs.",
+				"playlist_too_long": "The playlist is too long. The maximum length is {maxPlaylistSize} songs."
 			},
-			"added_to_play_next": "تم إضافة [{title}]({uri}) لتشغيلها تالياً.",
-			"added_playlist_to_play_next": "تم إضافة {length} أغنية لتشغيلها تالياً."
+			"added_to_play_next": "Added [{title}]({uri}) to play next in the queue.",
+			"added_playlist_to_play_next": "Added {length} songs to play next in the queue."
 		},
 		"queue": {
-			"description": "عرض قائمة الانتظار الحالية",
-			"now_playing": "يعمل حالياً: [{title}]({uri}) - بواسطة: <@{requester}> - المدة: `{duration}`",
-			"live": "مباشر",
-			"track_info": "{index}. [{title}]({uri}) - بواسطة: <@{requester}> - المدة: `{duration}`",
-			"title": "قائمة الانتظار",
-			"page_info": "صفحة {index} من {total}"
+			"description": "Shows the current queue",
+			"now_playing": "Now playing: [{title}]({uri}) - Requested By: <@{requester}> - Duration: `{duration}`",
+			"live": "LIVE",
+			"track_info": "{index}. [{title}]({uri}) - Requested By: <@{requester}> - Duration: `{duration}`",
+			"title": "Queue",
+			"page_info": "Page {index} of {total}"
 		},
 		"remove": {
-			"description": "إزالة أغنية من قائمة الانتظار",
+			"description": "Removes a song from the queue",
 			"options": {
-				"song": "رقم الأغنية التي تريد إزالتها"
+				"song": "The song number you want to remove"
 			},
 			"errors": {
-				"no_songs": "قائمة الانتظار فارغة.",
-				"invalid_number": "يرجى تقديم رقم أغنية صحيح."
+				"no_songs": "There are no songs in the queue.",
+				"invalid_number": "Please provide a valid song number."
 			},
 			"messages": {
-				"removed": "تم إزالة الأغنية رقم {songNumber} من القائمة."
+				"removed": "Removed song number {songNumber} from the queue."
 			}
 		},
 		"replay": {
-			"description": "إعادة تشغيل الأغنية الحالية من البداية",
+			"description": "Replays the current track",
 			"errors": {
-				"not_seekable": "لا يمكن إعادة تشغيل هذه الأغنية."
+				"not_seekable": "Cannot replay this track as it is not seekable."
 			},
 			"messages": {
-				"replaying": "جاري إعادة تشغيل الأغنية الحالية."
+				"replaying": "Replaying the current track."
 			}
 		},
 		"resume": {
-			"description": "استئناف تشغيل الأغنية المؤقتة",
+			"description": "Resumes the current song",
 			"errors": {
-				"not_paused": "المشغل ليس في وضع الإيقاف المؤقت."
+				"not_paused": "The player is not paused."
 			},
 			"messages": {
-				"resumed": "تم استئناف التشغيل."
+				"resumed": "Resumed the player."
 			}
 		},
 		"search": {
-			"description": "البحث عن أغنية",
+			"description": "Searches for a song",
 			"options": {
-				"song": "الأغنية التي تريد البحث عنها"
+				"song": "The song you want to search"
 			},
-			"select": "يرجى اختيار الأغنية التي تريد تشغيلها",
+			"select": "Please select the song you want to play",
 			"errors": {
-				"no_results": "لم يتم العثور على نتائج.",
-				"search_error": "حدث خطأ أثناء البحث."
+				"no_results": "No results found.",
+				"search_error": "There was an error while searching."
 			},
 			"messages": {
-				"added_to_queue": "تم إضافة [{title}]({uri}) إلى قائمة الانتظار."
+				"added_to_queue": "Added [{title}]({uri}) to the queue."
 			}
 		},
 		"seek": {
-			"description": "التنقل لوقت معين في الأغنية",
+			"description": "Seeks to a certain time in the song",
 			"options": {
-				"duration": "الوقت الذي تريد الذهاب إليه"
+				"duration": "The duration to seek to"
 			},
 			"errors": {
-				"invalid_format": "صيغة الوقت خاطئة. أمثلة: 1m, 1h 30m",
-				"not_seekable": "هذه الأغنية لا تدعم التنقل.",
-				"beyond_duration": "لا يمكن التنقل لما بعد مدة الأغنية {length}."
+				"invalid_format": "Invalid time format. Examples: seek 1m, seek 1h 30m",
+				"not_seekable": "This track is not seekable.",
+				"beyond_duration": "Cannot seek beyond the song duration of {length}."
 			},
 			"messages": {
-				"seeked_to": "تم الانتقال إلى {duration}"
+				"seeked_to": "Seeked to {duration}"
 			}
 		},
 		"shuffle": {
-			"description": "خلط قائمة الانتظار",
+			"description": "Shuffles the queue",
 			"messages": {
-				"shuffled": "تم خلط قائمة الانتظار بنجاح."
+				"shuffled": "Shuffled the queue."
 			}
 		},
 		"skip": {
-			"description": "تخطي الأغنية الحالية",
+			"description": "Skips the current song",
 			"messages": {
-				"skipped": "تم تخطي [{title}]({uri})."
+				"skipped": "Skipped [{title}]({uri})."
 			}
 		},
 		"skipto": {
-			"description": "تخطي إلى أغنية محددة في القائمة",
+			"description": "Skips to a specific song in the queue",
 			"options": {
-				"number": "رقم الأغنية التي تريد التخطي إليها"
+				"number": "The number of the song you want to skip to"
 			},
 			"errors": {
-				"invalid_number": "يرجى تقديم رقم صحيح."
+				"invalid_number": "Please provide a valid number."
 			},
 			"messages": {
-				"skipped_to": "تم التخطي إلى الأغنية رقم {number}."
+				"skipped_to": "Skipped to song number {number}."
 			}
 		},
 		"stop": {
-			"description": "إيقاف الموسيقى ومسح قائمة الانتظار",
+			"description": "Stops the music and clears the queue",
 			"messages": {
-				"stopped": "تم إيقاف الموسيقى ومسح القائمة بالكامل."
+				"stopped": "Stopped the music and cleared the queue."
 			}
 		},
 		"volume": {
-			"description": "ضبط مستوى صوت البوت",
+			"description": "Sets the volume of the player",
 			"options": {
-				"number": "مستوى الصوت الذي تريد ضبطه"
+				"number": "The volume you want to set"
 			},
 			"messages": {
-				"invalid_number": "يرجى تقديم رقم صحيح.",
-				"too_low": "لا يمكن أن يكون الصوت أقل من 0.",
-				"too_high": "مستوى الصوت لا يمكن أن يتجاوز 200. لا نريد إتلاف سمعك أو سماعاتك!",
-				"set": "تم ضبط مستوى الصوت على {volume}"
+				"invalid_number": "Please provide a valid number.",
+				"too_low": "The volume can't be lower than 0.",
+				"too_high": "The volume can't be higher than 200. Do you want to damage your hearing or speakers? Hmmm, I don't think that's such a good idea.",
+				"set": "Set the volume to {volume}"
 			}
 		},
 		"addsong": {
-			"description": "إضافة أغنية إلى قائمة التشغيل الخاصة بك",
+			"description": "Adds a song to the playlist",
 			"options": {
-				"playlist": "اسم قائمة التشغيل",
-				"song": "الأغنية التي تريد إضافتها"
+				"playlist": "The playlist you want to add",
+				"song": "The song you want to add"
 			},
 			"messages": {
-				"no_playlist": "يرجى تحديد قائمة تشغيل",
-				"no_song": "يرجى تحديد أغنية",
-				"playlist_not_found": "هذه القائمة غير موجودة",
-				"no_songs_found": "لم يتم العثور على أغاني",
-				"added": "تم إضافة {count} أغنية إلى {playlist}"
+				"no_playlist": "Please provide a playlist",
+				"no_song": "Please provide a song",
+				"playlist_not_found": "That playlist doesn't exist",
+				"no_songs_found": "No songs found",
+				"added": "Added {count} song(s) to {playlist}"
 			}
 		},
 		"create": {
-			"description": "إنشاء قائمة تشغيل جديدة",
+			"description": "Creates a playlist",
 			"options": {
-				"name": "اسم قائمة التشغيل"
+				"name": "The name of the playlist"
 			},
 			"messages": {
-				"name_too_long": "اسم القائمة لا يجب أن يتجاوز 50 حرفاً.",
-				"playlist_exists": "هناك قائمة تشغيل بهذا الاسم بالفعل.",
-				"playlist_created": "تم إنشاء قائمة التشغيل **{name}** بنجاح."
+				"name_too_long": "Playlist names can only be 50 characters long.",
+				"playlist_exists": "A playlist with that name already exists. Please use a different name.",
+				"playlist_created": "Playlist **{name}** has been created."
 			}
 		},
 		"delete": {
-			"description": "حذف قائمة تشغيل",
+			"description": "Deletes a playlist",
 			"options": {
-				"playlist": "القائمة التي تريد حذفها"
+				"playlist": "The playlist you want to delete"
 			},
 			"messages": {
-				"playlist_not_found": "قائمة التشغيل هذه غير موجودة.",
-				"playlist_deleted": "تم حذف قائمة التشغيل **{playlistName}**."
+				"playlist_not_found": "That playlist doesn't exist.",
+				"playlist_deleted": "Deleted playlist **{playlistName}**."
 			}
 		},
 		"list": {
-			"description": "عرض جميع قوائم التشغيل للمستخدم",
+			"description": "Retrieves all playlists for the user",
 			"options": {
-				"user": "المستخدم الذي تريد رؤية قوائمه"
+				"user": "The user whose playlists you want to retrieve"
 			},
 			"messages": {
-				"no_playlists": "هذا المستخدم ليس لديه قوائم تشغيل.",
-				"your": "خاصتك",
-				"playlists_title": "قوائم تشغيل {username}",
-				"error": "حدث خطأ أثناء جلب قوائم التشغيل."
+				"no_playlists": "This user has no playlists.",
+				"your": "Your",
+				"playlists_title": "{username}'s Playlists",
+				"error": "An error occurred while retrieving the playlists."
 			}
 		},
 		"load": {
-			"description": "تحميل وتشغيل قائمة تشغيل",
+			"description": "Loads a playlist",
 			"options": {
-				"playlist": "القائمة التي تريد تحميلها"
+				"playlist": "The playlist you want to load"
 			},
 			"messages": {
-				"playlist_not_exist": "هذه القائمة غير موجودة.",
-				"playlist_empty": "هذه القائمة فارغة.",
-				"playlist_loaded": "تم تحميل `{name}` مع `{count}` أغنية."
+				"playlist_not_exist": "That playlist doesn't exist.",
+				"playlist_empty": "That playlist is empty.",
+				"playlist_loaded": "Loaded `{name}` with `{count}` songs."
 			}
 		},
 		"removesong": {
-			"description": "إزالة أغنية من قائمة تشغيل خاصة",
+			"description": "Removes a song from the playlist",
 			"options": {
-				"playlist": "القائمة التي تريد الإزالة منها",
-				"song": "الأغنية التي تريد إزالتها"
+				"playlist": "The playlist you want to remove from",
+				"song": "The song you want to remove"
 			},
 			"messages": {
-				"provide_playlist": "يرجى تقديم اسم القائمة.",
-				"provide_song": "يرجى تقديم اسم الأغنية.",
-				"playlist_not_exist": "هذه القائمة غير موجودة.",
-				"song_not_found": "لم يتم العثور على أغنية مطابقة.",
-				"song_removed": "تم إزالة {song} من {playlist}.",
-				"error_occurred": "حدث خطأ أثناء إزالة الأغنية."
+				"provide_playlist": "Please provide a playlist.",
+				"provide_song": "Please provide a song.",
+				"playlist_not_exist": "That playlist doesn't exist.",
+				"song_not_found": "No matching song found.",
+				"song_removed": "Removed {song} from {playlist}.",
+				"error_occurred": "An error occurred while removing the song."
 			}
 		},
 		"steal": {
-			"description": "سرقة قائمة تشغيل من مستخدم آخر وإضافتها لقوائمك",
+			"description": "Steals a playlist from another user and adds it to your playlists",
 			"options": {
-				"playlist": "القائمة التي تريد سرقتها",
-				"user": "المستخدم الذي تريد أخذ القائمة منه"
+				"playlist": "The playlist you want to steal",
+				"user": "The user from whom you want to steal the playlist"
 			},
 			"messages": {
-				"provide_playlist": "يرجى تقديم اسم القائمة.",
-				"provide_user": "يرجى منشن المستخدم.",
-				"playlist_not_exist": "هذه القائمة غير موجودة لدى المستخدم المذكور.",
-				"playlist_stolen": "تمت سرقة قائمة `{playlist}` بنجاح من {user}.",
-				"error_occurred": "حدث خطأ أثناء محاولة السرقة."
+				"provide_playlist": "Please provide a playlist name.",
+				"provide_user": "Please mention a user.",
+				"playlist_not_exist": "That playlist doesn't exist for the mentioned user.",
+				"playlist_stolen": "Successfully stole the playlist `{playlist}` from {user}.",
+				"error_occurred": "An error occurred while stealing the playlist."
 			}
 		}
 	},
 	"buttons": {
-		"invite": "دعوة",
-		"support": "سيرفر الدعم",
-		"previous": "السابق",
-		"resume": "استئناف",
-		"stop": "إيقاف",
-		"skip": "تخطي",
-		"loop": "تكرار",
+		"invite": "Invite",
+		"support": "Support Server",
+		"previous": "Previous",
+		"resume": "Resume",
+		"stop": "Stop",
+		"skip": "Skip",
+		"loop": "Loop",
 		"errors": {
-			"not_author": "لا يمكنك استخدام هذا الزر."
+			"not_author": "You can't use this button."
 		}
 	},
 	"player": {
 		"errors": {
-			"no_player": "لا يوجد مشغل نشط في هذا السيرفر.",
-			"no_channel": "يجب أن تكون في قناة صوتية لاستخدام هذا الأمر.",
-			"queue_empty": "قائمة الانتظار فارغة.",
-			"no_previous": "لا توجد أغاني سابقة في القائمة.",
-			"no_song": "لا توجد أغاني في القائمة.",
-			"already_paused": "الأغنية متوقفة مؤقتاً بالفعل."
+			"no_player": "There is no active player in this guild.",
+			"no_channel": "You need to be in a voice channel to use this command.",
+			"queue_empty": "The queue is empty.",
+			"no_previous": "There are no previous songs in the queue.",
+			"no_song": "There are no songs in the queue.",
+			"already_paused": "The song is already paused."
 		},
 		"trackStart": {
-			"now_playing": "يعمل حالياً",
-			"requested_by": "بواسطة {user}",
-			"duration": "المدة",
-			"author": "الفنان",
-			"not_connected_to_voice_channel": "أنت لست متصلاً بـ <#{channel}> لاستخدام هذه الأزرار.",
-			"need_dj_role": "يجب أن تمتلك رتبة الدي جي لاستخدام هذا الأمر.",
-			"previous_by": "السابق بواسطة {user}",
-			"no_previous_song": "لا توجد أغنية سابقة.",
-			"paused_by": "تم الإيقاف بواسطة {user}",
-			"resumed_by": "تم الاستئناف بواسطة {user}",
-			"skipped_by": "تم التخطي بواسطة {user}",
-			"no_more_songs_in_queue": "لا توجد أغاني أخرى في القائمة.",
-			"looping_by": "تكرار الأغنية بواسطة {user}",
-			"looping_queue_by": "تكرار القائمة بواسطة {user}",
-			"looping_off_by": "إلغاء التكرار بواسطة {user}"
+			"now_playing": "Now Playing",
+			"requested_by": "Requested by {user}",
+			"duration": "Duration",
+			"author": "Author",
+			"not_connected_to_voice_channel": "You are not connected to <#{channel}> to use these buttons.",
+			"need_dj_role": "You need to have the DJ role to use this command.",
+			"previous_by": "Previous by {user}",
+			"no_previous_song": "There is no previous song.",
+			"paused_by": "Paused by {user}",
+			"resumed_by": "Resumed by {user}",
+			"skipped_by": "Skipped by {user}",
+			"no_more_songs_in_queue": "There is no more song in the queue.",
+			"looping_by": "Looping by {user}",
+			"looping_queue_by": "Looping Queue by {user}",
+			"looping_off_by": "Looping Off by {user}"
 		},
 		"setupStart": {
-			"now_playing": "يعمل حالياً",
-			"description": "[{title}]({uri}) بواسطة {author} • `[{length}]` - طلب بواسطة <@{requester}>",
-			"error_searching": "حدث خطأ أثناء البحث.",
-			"no_results": "لم يتم العثور على نتائج.",
-			"nothing_playing": "لا يوجد شيء يعمل حالياً",
-			"queue_too_long": "قائمة الانتظار طويلة جداً.",
-			"playlist_too_long": "قائمة التشغيل طويلة جداً.",
-			"added_to_queue": "تم إضافة [{title}]({uri}) للقائمة.",
-			"added_playlist_to_queue": "تم إضافة [{length}] أغنية من القائمة للانتظار."
+			"now_playing": "Now Playing",
+			"description": "[{title}]({uri}) by {author} • `[{length}]` - Requested by <@{requester}>",
+			"error_searching": "There was an error while searching.",
+			"no_results": "There were no results found.",
+			"nothing_playing": "Nothing is playing right now",
+			"queue_too_long": "The queue is too long. The maximum length is {maxQueueSize} songs.",
+			"playlist_too_long": "The playlist is too long. The maximum length is {maxPlaylistSize} songs.",
+			"added_to_queue": "Added [{title}]({uri}) to the queue.",
+			"added_playlist_to_queue": "Added [{length}] songs from the playlist to the queue."
 		}
 	},
 	"event": {
 		"interaction": {
-			"setup_channel": "لا يمكنك استخدام هذا الأمر في قناة الإعداد.",
-			"no_send_message": "ليس لدي صلاحية **`إرسال الرسائل`** أو **`رؤية القناة`** أو **`تضمين الروابط`**.",
-			"no_permission": "ليس لدي صلاحية {permissions}.",
-			"no_user_permission": "ليس لديك صلاحيات كافية لاستخدام هذا الأمر.",
-			"no_voice_channel": "يجب أن تكون متصلاً بقناة صوتية لاستخدام أمر `{command}`.",
-			"no_connect_permission": "ليس لدي صلاحية `الاتصال` لتنفيذ أمر `{command}`.",
-			"no_speak_permission": "ليس لدي صلاحية `التحدث` لتنفيذ أمر `{command}`.",
-			"no_request_to_speak": "ليس لدي صلاحية `طلب التحدث` لتنفيذ أمر `{command}`.",
-			"different_voice_channel": "أنت لست متصلاً بـ {channel} لاستخدام أمر `{command}`.",
-			"no_music_playing": "لا يوجد موسيقى تعمل حالياً.",
-			"no_dj_role": "رتبة الدي جي غير محددة.",
-			"no_dj_permission": "يجب أن تمتلك رتبة الدي جي لاستخدام هذا الأمر.",
-			"cooldown": "يرجى الانتظار {time} ثانية قبل استخدام أمر `{command}` مجدداً.",
-			"error": "حدث خطأ: `{error}`",
-			"vote_button": "صوّت لي!",
-			"vote_message": "انتظر! يجب أن تصوت في top.gg لتستخدم هذا الأمر. شكراً."
+			"setup_channel": "You can't use this command in the setup channel.",
+			"no_send_message": "I don't have **`SendMessage`**, **`ViewChannel`**, **`EmbedLinks`** or **`ReadMessageHistory`**  permission.",
+			"no_permission": "I don't have {permissions} permission.",
+			"no_user_permission": "You don't have enough permissions to use this command.",
+			"no_voice_channel": "You must be connected to a voice channel to use this `{command}` command.",
+			"no_connect_permission": "I don't have `CONNECT` permissions to execute this `{command}` command.",
+			"no_speak_permission": "I don't have `SPEAK` permissions to execute this `{command}` command.",
+			"no_request_to_speak": "I don't have `REQUEST TO SPEAK` permission to execute this `{command}` command.",
+			"different_voice_channel": "You are not connected to {channel} to use this `{command}` command.",
+			"no_music_playing": "Nothing is playing right now.",
+			"no_dj_role": "DJ role is not set.",
+			"no_dj_permission": "You need to have the DJ role to use this command.",
+			"cooldown": "Please wait {time} more second(s) before reusing the `{command}` command.",
+			"error": "An error occurred: `{error}`",
+			"vote_button": "Vote for me!",
+			"vote_message": "Wait! You need to vote on top.gg to use this command. Thanks."
 		},
 		"message": {
-			"prefix_mention": "مرحباً، البادئة (Prefix) الخاصة بي هي `{prefix}`. لمزيد من المعلومات استخدم `{prefix}help`.",
-			"no_send_message": "ليس لدي الصلاحيات اللازمة لإرسال الرسائل وتضمين الروابط.",
-			"no_permission": "ليس لدي صلاحية {permissions}.",
-			"no_user_permission": "ليس لديك صلاحيات كافية.",
-			"no_voice_channel": "يجب أن تكون في قناة صوتية لاستخدام أمر `{command}`.",
-			"no_connect_permission": "ليس لدي صلاحية `الاتصال`.",
-			"no_speak_permission": "ليس لدي صلاحية `التحدث`.",
-			"no_request_to_speak": "ليس لدي صلاحية `طلب التحدث`.",
-			"different_voice_channel": "يجب أن تكون في نفس القناة الصوتية {channel}.",
-			"no_music_playing": "لا يوجد موسيقى تعمل حالياً.",
-			"no_dj_role": "رتبة الدي جي غير محددة.",
-			"no_dj_permission": "يجب أن تمتلك رتبة الدي جي.",
-			"missing_arguments": "معطيات ناقصة",
-			"missing_arguments_description": "يرجى تقديم المعطيات المطلوبة لأمر `{command}`.\n\nأمثلة:\n{examples}",
-			"syntax_footer": "الصيغة: [] = اختياري، <> = مطلوب",
-			"cooldown": "يرجى الانتظار {time} ثانية.",
-			"no_mention_everyone": "لا يمكنك استخدام هذا الأمر مع everyone. يرجى استخدام أوامر السلاش.",
-			"error": "حدث خطأ: `{error}`",
-			"no_voice_channel_queue": "يجب أن تكون في قناة صوتية لإضافة أغاني.",
-			"no_permission_connect_speak": "ليس لدي صلاحية كافية للاتصال أو التحدث في <#{channel}>.",
-			"different_voice_channel_queue": "يجب أن تكون متصلاً بـ <#{channel}> لإضافة الأغاني.",
-			"vote_button": "صوّت لي!",
-			"vote_message": "يجب التصويت في top.gg لاستخدام هذا الأمر."
+			"prefix_mention": "Hey, my prefix for this server is `{prefix}`. Want more info? then do `{prefix}help`\nStay Safe, Stay Awesome!",
+			"no_send_message": "I don't have **`SendMessage`**, **`ViewChannel`**, **`EmbedLinks`** or **`ReadMessageHistory`**  permission.",
+			"no_permission": "I don't have {permissions} permission.",
+			"no_user_permission": "You don't have enough permissions to use this command.",
+			"no_voice_channel": "You must be connected to a voice channel to use this `{command}` command.",
+			"no_connect_permission": "I don't have `CONNECT` permissions to execute this `{command}` command.",
+			"no_speak_permission": "I don't have `SPEAK` permissions to execute this `{command}` command.",
+			"no_request_to_speak": "I don't have `REQUEST TO SPEAK` permission to execute this `{command}` command.",
+			"different_voice_channel": "You are not connected to {channel} to use this `{command}` command.",
+			"no_music_playing": "Nothing is playing right now.",
+			"no_dj_role": "DJ role is not set.",
+			"no_dj_permission": "You need to have the DJ role to use this command.",
+			"missing_arguments": "Missing Arguments",
+			"missing_arguments_description": "Please provide the required arguments for the `{command}` command.\n\nExamples:\n{examples}",
+			"syntax_footer": "Syntax: [] = optional, <> = required",
+			"cooldown": "Please wait {time} more second(s) before reusing the `{command}` command.",
+			"no_mention_everyone": "You can't use this command with everyone or here. Please use slash command.",
+			"error": "An error occurred: `{error}`",
+			"no_voice_channel_queue": "You are not connected to a voice channel to queue songs.",
+			"no_permission_connect_speak": "I don't have enough permission to connect/speak in <#{channel}>.",
+			"different_voice_channel_queue": "You are not connected to <#{channel}> to queue songs.",
+			"vote_button": "Vote for me!",
+			"vote_message": "Wait! You need to vote on top.gg to use this command. Thanks."
 		},
 		"setupButton": {
-			"no_voice_channel_button": "يجب أن تكون في قناة صوتية لاستخدام هذا الزر.",
-			"different_voice_channel_button": "أنت لست في {channel} لاستخدام هذه الأزرار.",
-			"now_playing": "يعمل حالياً",
-			"live": "مباشر",
-			"requested_by": "طلب بواسطة <@{requester}>",
-			"no_dj_permission": "يجب أن تمتمل رتبة الدي جي لاستخدام هذا الزر.",
-			"volume_set": "تم ضبط الصوت على {vol}%",
-			"volume_footer": "مستوى الصوت: {vol}%",
-			"paused": "مؤقت",
-			"resumed": "مستأنف",
-			"pause_resume": "تم {name} الموسيقى.",
-			"pause_resume_footer": "تم {name} بواسطة {displayName}",
-			"no_music_to_skip": "لا يوجد موسيقى لتخطيها.",
-			"skipped": "تم تخطي الموسيقى.",
-			"skipped_footer": "تم التخطي بواسطة {displayName}",
-			"stopped": "تم إيقاف الموسيقى.",
-			"stopped_footer": "تم الإيقاف بواسطة {displayName}",
-			"nothing_playing": "لا يوجد شيء يعمل حالياً",
-			"loop_set": "وضع التكرار: {loop}.",
-			"loop_footer": "تم ضبط التكرار على {loop} بواسطة {displayName}",
-			"shuffled": "تم خلط قائمة الانتظار.",
-			"no_previous_track": "لا توجد أغنية سابقة.",
-			"playing_previous": "جاري تشغيل الأغنية السابقة.",
-			"previous_footer": "تشغيل السابق بواسطة {displayName}",
-			"rewinded": "تم إرجاع الموسيقى.",
-			"rewind_footer": "إرجاع بواسطة {displayName}",
-			"forward_limit": "لا يمكنك التقديم لما بعد نهاية الأغنية.",
-			"forwarded": "تم تقديم الموسيقى.",
-			"forward_footer": "تقديم بواسطة {displayName}",
-			"button_not_available": "هذا الزر غير متاح حالياً.",
-			"no_music_playing": "لا توجد موسيقى تعمل في هذا السيرفر."
+			"no_voice_channel_button": "You are not connected to a voice channel to use this button.",
+			"different_voice_channel_button": "You are not connected to {channel} to use these buttons.",
+			"now_playing": "Now Playing",
+			"live": "LIVE",
+			"requested_by": "Requested by <@{requester}>",
+			"no_dj_permission": "You need to have the DJ role to use this button.",
+			"volume_set": "Volume set to {vol}%",
+			"volume_footer": "Volume: {vol}%",
+			"paused": "Paused",
+			"resumed": "Resumed",
+			"pause_resume": "{name} the music.",
+			"pause_resume_footer": "{name} by {displayName}",
+			"no_music_to_skip": "There is no music to skip.",
+			"skipped": "Skipped the music.",
+			"skipped_footer": "Skipped by {displayName}",
+			"stopped": "Stopped the music.",
+			"stopped_footer": "Stopped by {displayName}",
+			"nothing_playing": "Nothing is playing right now",
+			"loop_set": "Loop set to {loop}.",
+			"loop_footer": "Loop set to {loop} by {displayName}",
+			"shuffled": "Shuffled the queue.",
+			"no_previous_track": "There is no previous track.",
+			"playing_previous": "Playing the previous track.",
+			"previous_footer": "Playing the previous track by {displayName}",
+			"rewinded": "Rewinded the music.",
+			"rewind_footer": "Rewinded by {displayName}",
+			"forward_limit": "You cannot forward the music more than the length of the song.",
+			"forwarded": "Forwarded the music.",
+			"forward_footer": "Forwarded by {displayName}",
+			"button_not_available": "This button is not available.",
+			"no_music_playing": "There is no music playing in this server."
 		}
 	},
-	"Evaluate code": "تقييم الكود",
-	"Leave a guild": "الخروج من السيرفر",
-	"List all guilds the bot is in": "قائمة جميع السيرفرات التي يتواجد بها البوت",
-	"Restart the bot": "إعادة تشغيل البوت",
-	"The loop mode you want to set": "وضع التكرار الذي تريد ضبطه"
+	"Evaluate code": "Evaluate code",
+	"Leave a guild": "Leave a guild",
+	"List all guilds the bot is in": "List all guilds the bot is in",
+	"Restart the bot": "Restart the bot",
+	"The loop mode you want to set": "The loop mode you want to set"
 }
