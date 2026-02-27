@@ -11,14 +11,15 @@ module.exports = class Setname extends Command {
     }
 
     async run(message, args) {
+        if (!args.length) return message.reply("يرجى كتابة الاسم الجديد.");
         const newName = args.join(" ");
-        if (!newName) return message.reply("يرجى كتابة الاسم الجديد الذي تريده.");
 
         try {
             await this.client.user.setUsername(newName);
-            return message.reply(`✅ تم تغيير اسم البوت بنجاح إلى: **${newName}**`);
+            return message.reply(`✅ تم تغيير الاسم إلى: **${newName}**`);
         } catch (error) {
-            return message.reply(`❌ فشل تغيير الاسم: ${error.message}`);
+            console.error(error);
+            return message.reply(`❌ خطأ: ${error.message}`);
         }
     }
 };
